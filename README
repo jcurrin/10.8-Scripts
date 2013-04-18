@@ -1,1 +1,40 @@
 10.8 Scripts 
+
+ML_Casper_Setup
+This script is responsible for finalizing all customizations in which I incorporate at my company.  Please feel free to reuse any posted code, as my work is mostly a collection of others code.  
+
+This script performs the following actions: 
+-Check to see if this script as run in the past, if so the script will abort.
+-If continues it will then create a debug file.
+-Update DYLD library cache.
+-Disable Startup Assistant (Annoying Welcome Screen.
+-Determine computer model and apply specified power management settings.
+-Enable Universal Access.
+-Set network time server and timezone to Denver. 
+-Wipe old installer logs.
+-Stop iCloud setup assistant from launching.  ***Currently not working***
+-Stop Apple from changing dock and adding their useless dock icons.
+-Turn off Time Machine for disk prompts
+-Disable Fast User Switching.
+-Redirect SUS to company server. (We are using NetSUS Appliance from JAMF)
+-Turn off Bluetooth.
+-Turn off Natural Scrolling.
+-Disable DS_Store files from being created on network volumes. 
+-Auto-brightness set to off.
+-Allow non-admins to manage printers and run OS updates.
+-Set Finder to column view. 
+-Re-create admin user.
+-Enable root user.
+-Enable SSH.
+-Start ARD Agent.
+-Turn crappy Gatekeeper off.
+-Reinforce Casper policy management.
+-Repair Permissions.
+-Remove rogue user folders, which can be created because of Casper/Composer.
+-Removes Apple "about" files.
+-Setup VPN.  See VPN-2.sh for more in-depth details about this script.
+-Wipes system logs (so our admin password isn't logged).
+-Creates a dummy file to prevent this script from running again.
+-Set login window to username/password field. 
+-Update debug file that script has completed installing.
+-Restarts machine.  
